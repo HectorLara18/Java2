@@ -2,10 +2,12 @@ package Empleado;
 
 public class Person {
     //Atributos de la clase
+    public static int id = 0; //Este metodo tiene la palabra public porque el nivel de acceso es publico y static porque es una variable que puede ser editada por todas las clases
     protected String nombre;
     protected String apellido;
 
     public Person(String Nombre, String Apellido){
+        int userID = id++;
         this.nombre = Nombre;
         this.apellido = Apellido;
     }
@@ -21,4 +23,5 @@ public class Person {
     public String obtenerNombre() {
         return this.nombre;
     }
+
 }
