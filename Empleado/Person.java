@@ -7,7 +7,7 @@ public class Person {
     protected String apellido;
 
     public Person(String Nombre, String Apellido){
-        int userID = id++;
+        id++;
         this.nombre = Nombre;
         this.apellido = Apellido;
     }
